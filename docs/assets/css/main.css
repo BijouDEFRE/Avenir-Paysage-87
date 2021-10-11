@@ -2070,14 +2070,15 @@ input, select, textarea {
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
-				border-radius: 0.35em;
+				/* border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
-				color: #fff;
-				content: '👁 voir 👁';
+				color: #fff; */
+				/* content: 'Voir'; */
+				content: url(../images/Avenir_Paysage_87_Ptit.png);
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
-				left: 50%;
+				left: 45%;
 				line-height: 2.25em;
 				margin: -1.25em 0 0 -3em;
 				opacity: 0;
@@ -2085,7 +2086,7 @@ input, select, textarea {
 				position: absolute;
 				text-align: center;
 				text-decoration: none;
-				top: 50%;
+				top: 45%;
 				white-space: nowrap;
 			}
 
@@ -2135,6 +2136,7 @@ input, select, textarea {
 
 		.image.avatar {
 			border-radius: 100%;
+			transition: transform .5s;
 		}
 
 			.image.avatar:before {
@@ -2144,6 +2146,10 @@ input, select, textarea {
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
+			}
+
+			.image.avatar:hover {
+				transform: scale(1.6);
 			}
 
 /* List */
@@ -2190,7 +2196,7 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
+		cursor: pointer;
 		list-style: none;
 		padding-left: 0;
 	}
